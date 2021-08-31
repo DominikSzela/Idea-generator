@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#wrapper {
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+    border: 2px gray solid;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+#headter {
+    font-size: 24px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#headter h1 {
+    font-size: 36px;
+    padding: 20px 0px;
+}
+
+#img-area {
+    display: flex;
+    position: relative;
+    height: 300px;
+    align-items: center;
+}
+
+#img-area img {
+    left: 500px;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    width: 360px;
+    cursor: pointer;
+}
+
+#box-for-displays {
+    display: flex;
+    position: relative;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+#choice-area {
+    display: flex;
+    position: absolute;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.area {
+    display: flex;
+    font-size: 20px;
+    width: 320px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.area.read {
+    background-image: radial-gradient(green, rgb(255, 255, 255) 60%);
+}
+
+
+.mid {
+    display: flex;
+    font-size: 20px;
+    width: 180px;
+    height: 200px;
+    border-style: solid;
+    border-width: 0 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    position: absolute;
+    display: flex;
+    height: 250px;
+    width: 720px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e9e9;
+    border: 1px gray solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.display p {
+    font-size: 20px;
+    margin: 35px;
+}
+
+.question input {
+    width: 60%;
+    text-align: center;
+    padding: 10px 8px;
+    border-radius: 5px;
+}
+
+.display button {
+    font-size: 14px;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.instruction {
+    text-align: center;
+    font-size: 0px;
+    color: blue;
+    font-weight: bold;
+}
+
+.error {
+    text-align: center;
+    font-size: 0px;
+    color: red;
+}
+
+.visable {
+    font-size: 24px;
+    margin-bottom: 26px;
+}
+
+.shake {
+    animation: shake 1.5s;
+}
+
+.bg-color {
+    animation: bg-color 1.5s;
+}
+
+
+@keyframes shake {
+
+    0% {
+        left: 500px;
+    }
+
+    20% {
+        left: 450px;
+    }
+
+    40% {
+        left: 550px;
+    }
+
+    60% {
+        left: 450px;
+    }
+
+    80% {
+        left: 550px;
+    }
+
+    100% {
+        left: 500px;
+    }
+}
+
+@keyframes bg-color {
+
+    0% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    20% {
+        background-color: blue;
+    }
+
+    40% {
+        background-color: aqua;
+    }
+
+    60% {
+        background-color: brown;
+    }
+
+    80% {
+        background-color: yellowgreen;
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}

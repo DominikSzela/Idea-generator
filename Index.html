@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generator Pomysłów</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="headter">
+            <h1>Generator Pomysłów</h1>
+            <p>Generator pomoże wymyślić pomysł na zajęcia</p>
+        </div>
+
+        <div id="img-area">
+            <img src="IMG/brain.png" alt="Brain">
+        </div>
+
+        <div id="box-for-displays">
+
+            <div id="choice-area">
+                <div class="area left">
+                    <p>Mam pytanie</p>
+                </div>
+                <div class="mid">
+                    <p>Czy</p>
+                </div>
+                <div class="area right">
+                    <p>Poproszę pomysł</p>
+                </div>
+            </div>
+
+            <div class="display question">
+                <input placeholder="Twoje pytanie">
+                <p class="answer" style="visibility:hidden">answer</p>
+                <button>Powrót</button>
+            </div>
+
+            <div class="display idea">
+                <p class="concept">concept</p>
+                <button>Powrót</button>
+            </div>
+
+        </div>
+        <div id="bottom-text">
+            <p class="instruction visable">Wybierz czy chcesz zadać pytanie, albo dostać gotowy pomysł. Następnie
+                kliknij na mózg!</p>
+            <p class="error">error</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
